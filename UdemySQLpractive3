@@ -1,0 +1,94 @@
+SELECT 
+    *
+FROM
+    employees
+WHERE
+    first_name = 'Elvis';
+    
+    
+SELECT 
+    *
+FROM
+    employees
+WHERE
+    first_name LIKE ('Mark%');
+    
+SELECT 
+    *
+FROM
+    employees
+WHERE
+    hire_date LIKE ('2%');
+    
+SELECT 
+    *
+FROM
+    employees
+WHERE
+    emp_no LIKE ('1000_');
+    
+SELECT
+	*
+FROM
+	salaries;
+    
+SELECT 
+    dept_name
+FROM
+    departments
+WHERE
+    dept_no IS NOT NULL;
+    
+    
+SELECT 
+    *
+FROM
+    employees
+WHERE
+    hire_date >= '2000-01-01'
+        AND gender = 'F';
+        
+
+SELECT 
+    *
+FROM
+    salaries
+WHERE
+    salary > 150000;
+    
+
+SELECT 
+    hire_date
+FROM
+    employees;
+    
+    
+SELECT 
+    COUNT(*)
+FROM
+    salaries;
+    
+SELECT 
+    *
+FROM
+    dept_manager;
+    
+SELECT 
+    COUNT(emp_no)
+FROM
+    dept_manager;
+    
+    
+SELECT 
+    COUNT(*)
+FROM
+    salaries
+WHERE
+    salary >= 100000;
+    
+    
+SELECT 
+    *
+FROM
+    employees
+ORDER BY hire_date DESC;
